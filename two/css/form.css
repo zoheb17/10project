@@ -1,0 +1,211 @@
+/* ============================= */
+/* GLOBAL RESET & BASE STYLES */
+/* ============================= */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Segoe UI", Arial, sans-serif;
+    background-color: #f4f6f8;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* ============================= */
+/* TOP SECTION */
+/* ============================= */
+.top_section {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 6rem;
+    padding: 60px;
+}
+
+.top_section h1 {
+    font-size: 56px;
+    font-weight: 700;
+    color: #222;
+}
+
+/* ============================= */
+/* IMAGE */
+/* ============================= */
+.imgae_conatiner {
+    width: 260px;
+    height: 260px;
+    border-radius: 50%;
+    overflow: hidden;
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.15);
+}
+
+.imgae_conatiner img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* ============================= */
+/* ABOUT SECTION */
+/* ============================= */
+.about {
+    padding: 40px 60px;
+}
+
+.about h2 {
+    font-size: 48px;
+    margin-bottom: 20px;
+    color: #111;
+}
+
+.about p {
+    font-size: 20px;
+    color: #555;
+    max-width: 900px;
+}
+
+/* ============================= */
+/* FORM */
+/* ============================= */
+form {
+    background-color: #ffffff;
+    width: 100%;
+    max-width: 360px;
+    padding: 25px;
+    margin: 40px auto;
+    border-radius: 10px;
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+input,
+textarea {
+    width: 100%;
+    padding: 10px 12px;
+    margin-bottom: 15px;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+    font-size: 15px;
+}
+
+input:focus,
+textarea:focus {
+    outline: none;
+    border-color: #007bff;
+}
+
+input[type="radio"] {
+    width: auto;
+}
+
+input[type="submit"],
+input[type="reset"] {
+    width: 48%;
+    padding: 10px;
+    border: none;
+    border-radius: 6px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+input[type="submit"] {
+    background-color: #007bff;
+    color: white;
+}
+
+input[type="reset"] {
+    background-color: #e0e0e0;
+}
+
+input[type="submit"]:hover {
+    background-color: #0056b3;
+}
+
+input[type="reset"]:hover {
+    background-color: #cfcfcf;
+}
+
+/* ============================= */
+/* RESPONSIVE FIX – STRUCTURE SAFE */
+/* ============================= */
+
+/* Medium screens (tablets) */
+@media (max-width: 992px) {
+    .top_section {
+        gap: 4rem;
+        padding: 40px;
+    }
+
+    .top_section h1 {
+        font-size: 44px;
+    }
+
+    .about h2 {
+        font-size: 40px;
+    }
+
+    .about p {
+        font-size: 18px;
+    }
+}
+
+/* Small screens (mobiles) */
+@media (max-width: 600px) {
+    .top_section {
+        flex-direction: column;
+        text-align: center;
+        gap: 2rem;
+    }
+
+    .imgae_conatiner {
+        width: 220px;
+        height: 220px;
+    }
+
+    .top_section h1 {
+        font-size: 30px;
+    }
+
+    .about {
+        padding: 30px 20px;
+    }
+
+    .about h2 {
+        font-size: 32px;
+    }
+
+    .about p {
+        font-size: 16px;
+        text-align: justify;
+    }
+
+    input[type="submit"],
+    input[type="reset"] {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+}
+
+/* Extra small screens */
+@media (max-width: 400px) {
+    .top_section h1 {
+        font-size: 24px;
+    }
+
+    .about h2 {
+        font-size: 26px;
+    }
+
+    .imgae_conatiner {
+        width: 180px;
+        height: 180px;
+    }
+}
